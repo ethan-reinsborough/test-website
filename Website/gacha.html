@@ -15,17 +15,44 @@
 
 <div class="sidenav">
     <a href="tokencalc.html">Token</a>
-    <a href="gacha.html">Gacha</a>
+    <a href="index.html">Home</a>
     <a href="#clients">Blog</a>
     <a href="#contact">WIP</a>
 </div>
 
 <div class="topborder">
-    <header>WELCOME TO MY CAVE!</header>
+    <header>GACHA SIMULATOR</header>
 </div>
 <div class="bgborder"></div>
-<div class="summary"><p>My name is Ethan and I am an aspiring web and game developer. <br>
-                        I am using this website as means to create and learn. </p>
+<div class="summary"><p>JS Powered Gacha Simulator </p>
+
+    <button onclick="GACHA()"> roll</button>
+
+    <p id="t">test</p>
+    <script>
+    function GACHA() {
+    
+    result = Math.round(Math.random() * 100);
+    document.getElementById("t").innerHTML = result;
+    
+    /*
+    if (result < 50){
+        document.getElementById("t").innerHTML = result;
+    }
+    else if (result >= 50 && result <= 75){
+        document.getElementById("t").innerHTML = result;
+    }
+    else if (result > 75 && result <= 95){
+        document.getElementById("t").innerHTML = result;
+    }
+    else (result > 95){
+        document.getElementById("t").innerHTML = result;
+    }
+    */ 
+    }
+     
+    </script>
+
 </div>
 <main>
     <img id="bg" src="images/border.png" width="2000" height="1000" alt="Background"> 
