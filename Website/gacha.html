@@ -28,28 +28,32 @@
 
     <button onclick="GACHA()"> roll</button>
 
-    <p id="t">test</p>
+    <p id="t">Press the button to try your luck!</p>
+    <img id="gc" src="">
     <script>
     function GACHA() {
     
     result = Math.round(Math.random() * 100);
-    document.getElementById("t").innerHTML = result;
     
-    /*
     if (result < 50){
-        document.getElementById("t").innerHTML = result;
+        document.getElementById("gc").src = "images/common.png";
+        document.getElementById("t").innerHTML = "common (50% rarity)";
     }
     else if (result >= 50 && result <= 75){
-        document.getElementById("t").innerHTML = result;
+        document.getElementById("gc").src = "images/rare.jpg";
+        document.getElementById("t").innerHTML = "rare (25% rarity)";
     }
     else if (result > 75 && result <= 95){
-        document.getElementById("t").innerHTML = result;
+        document.getElementById("gc").src = "images/epic.png";
+        document.getElementById("t").innerHTML = "epic (20% rarity)";
     }
-    else (result > 95){
-        document.getElementById("t").innerHTML = result;
-    }
-    */ 
-    }
+     else{
+        document.getElementById("gc").src = "images/legendary.png";
+        document.getElementById("t").innerHTML = "legendary (5% rarity)";
+
+     }   
+    
+  }
      
     </script>
 
